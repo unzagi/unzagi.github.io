@@ -1,6 +1,6 @@
-title: "Junuba"
+title: "simon-brooks.co.uk"
 author: "Simon B"
-description: "A blog about networking technologies." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: "Simon-brooks.co.uk - Networking and System Engineering" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
@@ -18,7 +18,7 @@ linkedin_username: "simon-brooks-uk"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-theme: "minima"
+remote_theme: pages-themes/architect@v0.2.0
 
 rss: rss
 
@@ -29,6 +29,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 titles_from_headings:
   strip_title: true
