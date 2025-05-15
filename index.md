@@ -1,5 +1,5 @@
 ## About Simon
-About Simon
+## About Simon
 
 After 7+ years in delivery and architecture roles, I’ve taken deliberate time out to reset, refocus, and rebuild.
 
