@@ -1,7 +1,7 @@
-## 2025-05-15 - Update
-2025-05-15 - Update
+## 2025-05-15 - Hello World
+## 2025-05-15 - Hello World
 
-Back in February, I spec’d a new PC to dive into AI/LLMs and sharpen my networking skills during a career break. By May, I’d spun up a full observability stack, built version control, hosted internal DNS, deployed Docker and LXC services, and explored a suite of self-hosted tools — with ChatGPT as my hands-on assistant and research partner throughout.
+Back in February, I spec’d a new PC to dive into AI/LLMs and sharpen my networking skills. By May, I’d spun up a full observability stack, built version control, hosted internal DNS, deployed Docker and LXC services, and explored a suite of self-hosted tools — with ChatGPT as my hands-on assistant and research partner throughout.
 
 What began as a modest AI lab has evolved into a production-grade home infrastructure — reconnecting me with my sysadmin roots while pushing into automation, AI integration, and modern networking.
 
