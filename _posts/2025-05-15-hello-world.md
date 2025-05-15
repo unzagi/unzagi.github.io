@@ -1,17 +1,19 @@
-## Hello World
+## 2025-05-15 - Update
 
-I've been documenting internally since March, working closely with ChatGPT as my helper. It has been a fruitful journey so far, revisting old skillsets from Sys Admin days, and setting myself up to bond these skills with Networking and AI.
+Back in February, I spec’d a new PC to dive into AI/LLMs and sharpen my networking skills during a career break. By May, I’d spun up a full observability stack, built version control, hosted internal DNS, deployed Docker and LXC services, and explored a suite of self-hosted tools — with ChatGPT as my hands-on assistant and research partner throughout.
 
-My next major goal is to get NetBox populated, with the vision of integrating it with LLMs for infrastructure querying and automation. Along the way, I’ve spun up an observability stack, built out version control and experimented with other tools. 
+What began as a modest AI lab has evolved into a production-grade home infrastructure — reconnecting me with my sysadmin roots while pushing into automation, AI integration, and modern networking.
 
-Here is a list of what's been going on, and what posts will likely follow.
+Next up: populating NetBox as the single source of truth for my network, laying the groundwork for LLM-powered querying and infrastructure automation.
+
+Here’s a snapshot of what I’ve built so far, and a preview of the topics I’ll dive into in upcoming posts.
 
 ---
 
 ## Work Completed
 
 ### Lab Rig
-- Built specifically to support LLMs
+- Chosen Spec specifically to support a medium LLMs
 - Dual-boot Linux/Windows
 - Geforce 4070 Ti Super
 - 128GB RAM
@@ -24,7 +26,7 @@ Here is a list of what's been going on, and what posts will likely follow.
 - Added 10G NIC to Firewall to Juniper EX2300
 - Fully migrated from ISP CPE to OpnSense
 
-### 🧠 Mon1 – Docker Monitoring Host
+### Mon1 – Docker Monitoring Host
 - Dockerized:
   - Grafana
   - Prometheus
@@ -46,7 +48,7 @@ Here is a list of what's been going on, and what posts will likely follow.
 - Added Homarr dashboard
 - Backup scripts using Python + crontab
 
-### 🎞️ Mon2 – Jellyfin + Docker Server
+### Mon2 – Jellyfin + Docker Server
 - Jellyfin media server
 - Dockerized DNS 2 with Technitium
 - DNS1 & DNS2 in HA failover config
@@ -81,6 +83,10 @@ Here is a list of what's been going on, and what posts will likely follow.
 - Using HA's private voice assistant stack  
   [Home Assistant Voice](https://www.home-assistant.io/voice_control/worlds-most-private-voice-assistant/)
 
+### Gitlab Pages
+- Building out this blog in Jekyll
+- Mirroring a Gitlab Pages version internally
+
 ---
 
 ##  Future Work - Not in Order
@@ -110,6 +116,3 @@ Here is a list of what's been going on, and what posts will likely follow.
 ### Backups
 - Finalize and document backup strategy
 
----
-
-This is my journey so far. If you're into infrastructure, automation, or homelab adventures — stick around.
