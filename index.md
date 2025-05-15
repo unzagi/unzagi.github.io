@@ -24,7 +24,7 @@ Here is a list of what's been going on, and what posts will likely follow.
 - Added 10G NIC to Firewall to Juniper EX2300
 - Fully migrated from ISP CPE to OpnSense
 
-### 🧠 Mon1 – Docker Monitoring Host
+### Mon1 – Docker Monitoring Host
 - Dockerized:
   - Grafana
   - Prometheus
@@ -46,7 +46,7 @@ Here is a list of what's been going on, and what posts will likely follow.
 - Added Homarr dashboard
 - Backup scripts using Python + crontab
 
-### 🎞️ Mon2 – Jellyfin + Docker Server
+### Mon2 – Jellyfin + Docker Server
 - Jellyfin media server
 - Dockerized DNS 2 with Technitium
 - DNS1 & DNS2 in HA failover config
@@ -110,6 +110,3 @@ Here is a list of what's been going on, and what posts will likely follow.
 ### Backups
 - Finalize and document backup strategy
 
----
-
-This is my journey so far. If you're into infrastructure, automation, or homelab adventures — stick around.
