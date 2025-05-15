@@ -40,7 +40,7 @@ Here’s a snapshot of what I’ve built so far, and a preview of the topics I�
   - GitLab
   - ELK Stack: Elasticsearch, Logstash, Kibana, Filebeat, Elastalert
   - Maltrail, Zenarmor Cloud, CrowdSec
-- Home Assistant data exported to InfluxDB
+- Home Assistant metrics exported to InfluxDB, ready for dashboards
 - IDS enabled on OpnSense
 - Built Mon1 dashboards in Grafana
 - Temporarily crashed due to RAM pressure from GitLab + Security stack
