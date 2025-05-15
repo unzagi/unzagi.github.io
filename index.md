@@ -1,141 +1,115 @@
-# Networking and System Engineering
+## Hello World
 
-## 🚀14/03/2025 - Building My Own GitLab & GitHub Workflows: A Journey in Source Control
+I've been documenting internally since March, working closely with ChatGPT as my helper. It has been a fruitful journey so far, revisting old skillsets from Sys Admin days, and setting myself up to bond these skills with Networking and AI.
 
-## **Introduction**
+My next major goal is to get NetBox populated, with the vision of integrating it with LLMs for infrastructure querying and automation. Along the way, I’ve spun up an observability stack, built out version control and experimented with other tools. 
 
-Today was one of those days where **everything clicks into place**.  
-After years of working with code, scripts, and configs in networking and System Engineering — sometimes organized, sometimes messy — I decided to **get serious** about **source control, automation, and managing my own projects and dotfiles**.
-
-And let me tell you — **setting up my own self-hosted GitLab**, has been **a game-changer**. Here’s a breakdown of what I did, what I learned, and what’s next.
+Here is a list of what's been going on, and what posts will likely follow.
 
 ---
 
-## **Why I Did This**
+## Work Completed
 
-- I wanted **better control over my own work**, without always relying on third-party hosted repos.
-- I needed a way to **work across multiple devices** (my laptop, Linux rig, home servers) without getting lost in different versions.
-- I was tired of "where did I put that config again?" — **version control for my entire lab and scripts** is now a must-have.
-- Plus, I wanted to finally **understand Git and branches properly**, and **protect** important work.
+### Lab Rig
+- Built specifically to support LLMs
+- Dual-boot Linux/Windows
+- Geforce 4070 Ti Super
+- 128GB RAM
+- Containerlab installed
+- First tests with LLM images completed
 
----
+### OpnSense Firewall
+- Rebuilt a 2016 gaming PC into a dedicated OpnSense box
+- Configured WireGuard VPN
+- Added 10G NIC to Firewall to Juniper EX2300
+- Fully migrated from ISP CPE to OpnSense
 
-## **Part 1: Spinning up a Self-Hosted GitLab**
+### 🧠 Mon1 – Docker Monitoring Host
+- Dockerized:
+  - Grafana
+  - Prometheus
+  - cAdvisor
+  - Portainer
+  - Node_Exporter
+  - Junos_Exporter
+  - InfluxDB
+  - Technitium DNS (DNS1)
+  - GitLab
+  - ELK Stack: Elasticsearch, Logstash, Kibana, Filebeat, Elastalert
+  - Maltrail, Zenarmor Cloud, CrowdSec
+- Home Assistant data exported to InfluxDB
+- IDS enabled on OpnSense
+- Built Mon1 dashboards in Grafana
+- Temporarily crashed due to RAM pressure from GitLab + Security stack
+- Upgraded to 32GB RAM, resumed services
+- Slack & Telegram alert testing with Grafana
+- Added Homarr dashboard
+- Backup scripts using Python + crontab
 
-First up, I decided to **host my own GitLab instance in Docker** on my `mon1` box. This means:
-- Full control over **repos, branches, access control**.
-- Ability to **self-host private work** (my scripts, Docker files, configs).
-- Separating **personal/internal projects** from public-facing content on GitHub.
+### 🎞️ Mon2 – Jellyfin + Docker Server
+- Jellyfin media server
+- Dockerized DNS 2 with Technitium
+- DNS1 & DNS2 in HA failover config
+- Dockerized:
+  - cAdvisor
+  - Node_Exporter
+  - Portainer
+  - NTP
+- Grafana dashboards for Mon2
 
-### **Key lessons:**
+###  eBay Box → Proxmox Server
+- Purchased additional PC for Proxmox
+- Installed 10G NIC and uplinked to EX2300
 
-- Using Docker Compose makes deploying GitLab **manageable and reproducible**.
-- **Mounting proper volumes** for GitLab data, configs, and logs means it’s safe and portable.
-- Adding **SSH keys** for secure access and enabling **protected branches** adds a layer of professionalism to my lab.
-- Getting familiar with **GitLab's UI** — setting **default branches**, **protected branches**, and **merge request workflows**.
+### Mon3 – Docker VM on Proxmox
+- Mailu server deployed for internal mail notifications (e.g., GitLab over TLS)
 
----
+###  Mon4 – Docker Host
+- Experimented with `step-ca` + `acme.sh`
+- Moved back to OpenSSL for internal CA
+- Dockerized GitLab Mirror
+- Configured repo mirroring between GitLab (Mon1) and GitLab-Mirror (Proxmox)
 
-## **Part 2: Understanding Branching (Properly, Finally)**
+###  Proxmox Services
+- Second Grafana + Prometheus instance on Proxmox
+- Backup/Dev platform for monitoring
+- NetBox VM installed
+- Initial Ansible scripts built for host config (Mon1, Mon2, Lab Windows)
 
-This was the real "aha" moment for me.
-
-I used to just "commit to master" and hope for the best. Today, I learned how to **manage proper dev branches**:
-
-- **Device-specific dev branches**:  
-  - `dev-laptop`  
-  - `dev-linux-rig`  
-
-- **Protected "main" branches** that hold my **ready/working versions**.
-
-### **Flow**:
-
-- Make and test changes in a `dev-*` branch.
-- When ready, create a **merge request to main** — for internal review and approval (even if it's just me for now!).
-
-> 🌟 **Realizations**:
-> - **Main is sacred** — only polished work gets merged.
-> - Dev branches allow **freedom to experiment**.
-> - **Merge requests simulate real team workflows** — future-proof if I collaborate later.
-
----
-
-## **Part 3: Linking GitHub and GitLab (Public vs Private)**
-
-Another big takeaway:  
-- **GitHub** is my public face — for blogs, open-source, and polished work.
-- **GitLab** is my private dev lab — for experiments, scripts, sensitive files (think: Docker Compose files, .bashrc, SSH config).
-
-➡️ So I set up:
-- **Private GitLab repo with branches (main/dev)**
-- **GitHub as public-facing repo for finalized blog posts and docs**
-
-### **Final workflow:**
-
-1. Work in `dev-linux-rig` or `dev-laptop`.
-2. Merge into `main` on GitLab when stable.
-3. (Optional) Pull selected files and **push to GitHub** for public viewing.
-
----
-
-## **Part 4: Managing Dotfiles and Automation Ideas**
-
-- I set up **dotfiles repo** in GitLab for things like `.bashrc`, `.vimrc`, `.ssh/config`.
-- Learned about the idea of **bare repos for dotfiles**, but keeping it simple for now.
-- Thinking ahead:  
-  - Use **cron jobs to auto-pull from Git** (keeping servers updated).
-  - Explore **Ansible** for proper config management and deployment.
+###  Home Assistant
+- Built a VoIP phone that connects directly to LLM
+- Using HA's private voice assistant stack  
+  [Home Assistant Voice](https://www.home-assistant.io/voice_control/worlds-most-private-voice-assistant/)
 
 ---
 
-## **Wins from Today**
+##  Future Work - Not in Order
 
-- ✅ **Self-hosted GitLab** — up, running, secure, accessible.
-- ✅ **SSH keys and remotes managed**.
-- ✅ **Proper branch strategy** — no more committing everything to master.
-- ✅ **Protected branches and merge requests** in place.
-- ✅ Started **thinking about automation** and **future scaling**.
-- ✅ Realized I now have a **solid backup/versioning system for scripts and dotfiles**.
-- ✅ **New blog workflow** (GitHub as polished, GitLab as dev space).
+### NetBox
+- Build Ansible playbooks to automate population
+- Use it as a source of truth for LLM queries
+- Model Docker containers and services
+- Document IoT fleet inside Home Assistant
 
----
+### Documentation
+- Visio-style network/environment diagrams
 
-## **Reflections**
+### Containerlab
+- Juniper EVPN/VXLAN topologies
 
-Looking back, I realized:
+### LLM Research
+- Explore running MCP locally
+- Follow work by [John Capobianco](https://www.linkedin.com/in/john-capobianco-644a1515/)
 
-- I **used to be reactive** — scripts here, files there, always searching for "the latest version".
-- Now, I'm **proactive and structured** — I know where things are, and I know how to collaborate (even if it's just me).
-- **Git is powerful when you respect it** — understanding branches, remotes, and workflows opens up **so much control**.
-- Setting up **my own GitLab** makes me independent of third-party services and lets me experiment.
+### Alerting
+- Create unified alerting across:
+  - Email
+  - Telegram
+  - Home Assistant VoIP phone
 
----
-
-## **What's Next?**
-
-- [ ] Add **automation** (cron or Ansible).
-- [ ] Refine **GitHub blog** workflow (maybe mirror a dev branch?).
-- [ ] Continue adding **dotfiles and scripts** — versioning *everything*.
-- [ ] Explore **CI/CD pipelines** for future lab projects.
-- [ ] Keep practicing **merge requests and protected branches**.
+### Backups
+- Finalize and document backup strategy
 
 ---
 
-## **Final Thoughts**
-
-If you're reading this and still managing your scripts and configs manually — **take the leap**.  
-Set up a GitLab, learn proper branching, and **own your work**.
-
----
-
-## **Bonus**: My New Git Habits
-
-- **Branch for everything** — dev first, merge to main when ready.
-- **Protect main** — no direct commits.
-- **Use merge requests** — even for myself (practice for future teams).
-- **SSH keys for all access** — secure and smooth.
-- **Back everything up** — dotfiles, scripts, and Docker stuff included.
-
----
-
-**Thanks for reading. Let's build cool things.** 🚀
+This is my journey so far. If you're into infrastructure, automation, or homelab adventures — stick around.
