@@ -1,9 +1,3 @@
----
-layout: post
-title: "Hello World"
-date: 2025-05-13
----
-
 ## Hello World
 
 I've been documenting internally since March, working closely with ChatGPT as my helper. It has been a fruitful journey so far, revisting old skillsets from Sys Admin days, and setting myself up to bond these skills with Networking and AI.
