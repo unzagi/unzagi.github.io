@@ -120,4 +120,4 @@ Here’s a snapshot of what I’ve built so far, and a preview of the topics I�
 
 ---
 
-If you're building something similar — or wildly different — with NetBox, LLMs, or home infra, I'd love know more .
+If you're building something similar — or wildly different — with NetBox, LLMs, or home infra, I'd love know more.
