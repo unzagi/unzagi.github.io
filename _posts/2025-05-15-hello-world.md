@@ -107,7 +107,7 @@ Here’s a snapshot of what I’ve built so far, and a preview of the topics I�
 
 ### LLM Research
 - Explore running MCP locally
-- Follow work by [John Capobianco](https://www.linkedin.com/in/john-capobianco-644a1515/)
+- Research work by [John Capobianco](https://www.linkedin.com/in/john-capobianco-644a1515/)
 
 ### Alerting
 - Create unified alerting across:
