@@ -1,12 +1,12 @@
 ## Hello World
 
-Back in February I spec'd a new PC to learn about AI/LLM and level up my networking skill sets. Since then I've spun up an observability stack, built out version control and experimented with other tools.
+Back in February, I spec’d a new PC to dive into AI/LLMs and sharpen my networking skills during a career break. By May, I’d spun up a full observability stack, built version control, hosted internal DNS, deployed Docker and LXC services, and explored a suite of self-hosted tools — with ChatGPT as my hands-on assistant and research partner throughout.
 
-It has been a fruitful journey, revisting skillsets from Sys Admin days, and setting up a production ready, super home network.
+What began as a modest AI lab has evolved into a production-grade home infrastructure — reconnecting me with my sysadmin roots while pushing into automation, AI integration, and modern networking.
 
-My next goal is to get NetBox populated with the Production network, with the vision of using it as a source of truth.  
+Next up: populating NetBox as the single source of truth for my network, laying the groundwork for LLM-powered querying and infrastructure automation.
 
-Here is an overview of what I've achieved so far, and some of the topics to appear in upcoming posts. 
+Here’s a snapshot of what I’ve built so far, and a preview of the topics I’ll dive into in upcoming posts.
 
 ---
 
