@@ -85,7 +85,8 @@ Here’s a snapshot of what I’ve built so far, and a preview of the topics I�
 
 ### Gitlab Pages
 - Building out this blog in Jekyll
-- Mirroring a Gitlab Pages version internally
+- Dockerized gitlab-runner
+- Testing/Configuring the blog via a Gitlab Pages version ready for Github
 
 ---
 
