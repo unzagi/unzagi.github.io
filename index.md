@@ -1,15 +1,12 @@
----
-layout: post
-title: "Hello World"
-date: 2025-05-13
----
 ## Hello World
 
-I've been documenting notes internally since March, working closely with ChatGPT as my helper. It has been a fruitful journey so far, revisting old skillsets from Sys Admin days, and setting myself up to bond these skills with Networking and AI.
+Back in February I spec'd a new PC to learn about AI/LLM and level up my networking skill sets. Since then I've spun up an observability stack, built out version control and experimented with other tools.
 
-My next major goal is to get NetBox populated, with the vision of integrating it with LLMs for infrastructure querying and automation. Along the way, I’ve spun up an observability stack, built out version control and experimented with other tools. 
+It has been a fruitful journey, revisting skillsets from Sys Admin days, and setting up a production ready, super home network.
 
-Here is a list of what's been going on, and what posts will likely follow.
+My next goal is to get NetBox populated with the Production network, with the vision of using it as a source of truth.  
+
+Here is an overview of what I've achieved so far, and some of the topics to appear in upcoming posts. 
 
 ---
 
