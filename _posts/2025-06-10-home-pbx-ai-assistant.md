@@ -88,7 +88,8 @@ This is what phone companies and businesses use to route calls internally and ex
 
 ## Result
 
-✅ I can call my **AI assistant** from any home phone to control smart devices.  
+✅ I can call my **AI assistant** (running on Home Assistant) from any home phone to control smart devices.
+from any home phone to control smart devices.  
 ✅ I can receive calls from the public phone network at home.  
 ✅ I can make calls out to any normal phone.  
 ✅ The system is backed up and sending notifications.  
@@ -101,7 +102,7 @@ This is what phone companies and businesses use to route calls internally and ex
 - Add more phones in different rooms.
 - Set up monitoring tools to check the PBX health and performance.
 - Experiment with advanced call routing (e.g. different voices/phones at different times of day).
-
+- Explore linking Grafana alerts to the phone system.
 ---
 
 ## Why This Project?
