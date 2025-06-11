@@ -1,5 +1,5 @@
-## 2025-06-10 - Building an AI-Powered Home Phone Switchboard
-## 2025-06-10 - Building an AI-Powered Home Phone Switchboard
+## Building an AI-Powered Home Phone Switchboard
+## Building an AI-Powered Home Phone Switchboard
 
 ---
 
