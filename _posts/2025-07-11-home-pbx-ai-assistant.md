@@ -25,7 +25,7 @@ Here’s the dream:
 To make this work, I needed to set up a proper **phone system** at home — also known as a **PBX** (Private Branch Exchange).  
 This is what phone companies and businesses use to route calls internally and externally.
 
-![Red Phone Setup](img/red_phone.jpg)
+![Red Phone Setup](/img/red_phone.jpg)
 
 ---
 
