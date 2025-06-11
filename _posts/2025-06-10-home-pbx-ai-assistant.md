@@ -1,5 +1,5 @@
-## Building an AI-Powered Home Phone Switchboard
-## Building an AI-Powered Home Phone Switchboard
+## Building an AI-Powered Home Phone ☎️ Switchboard
+## Building an AI-Powered Home Phone ☎️ Switchboard
 
 ---
 
@@ -7,7 +7,7 @@
 
 This project started with a simple but fun idea:
 
-**Could I take an old red telephone (a classic analogue phone), and make it part of a modern AI-powered smart home?**
+**Could I take an old red telephone ☎️ (a classic analogue phone), and make it part of a modern AI-powered smart home?**
 
 Here’s the dream:
 
