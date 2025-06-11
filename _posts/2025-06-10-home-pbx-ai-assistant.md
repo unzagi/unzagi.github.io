@@ -53,14 +53,7 @@ This is what phone companies and businesses use to route calls internally and ex
 
 ---
 
-## 4️⃣ Added a Desk Phone
-
-- Set up a **VOIP desk phone** (a standard office-style phone) in another room.
-- It is also connected to the PBX and works just like the other phones.
-
----
-
-## 5️⃣ Connected to the Outside World
+## 4️⃣ Connected to the Outside World
 
 - Set up a **virtual phone number** (a real UK phone number).
 - Now:
@@ -69,7 +62,7 @@ This is what phone companies and businesses use to route calls internally and ex
 
 ---
 
-## 6️⃣ Email Notifications
+## 5️⃣ Email Notifications
 
 - Configured the system to send **email notifications** for things like:
   - System backups
@@ -99,7 +92,7 @@ from any home phone to control smart devices.
 ## Next Steps
 
 - Improve the **AI phone assistant** — make it more conversational and able to trigger more smart home routines.
-- Add more phones in different rooms.
+- Setup Cisco PoE VoIP for a second extension downstairs.
 - Set up monitoring tools to check the PBX health and performance.
 - Experiment with advanced call routing (e.g. different voices/phones at different times of day).
 - Explore linking Grafana alerts to the phone system.
@@ -107,7 +100,7 @@ from any home phone to control smart devices.
 
 ## Why This Project?
 
-This is more than just a "phone system."  
+Back in the Uni days, we setup PBXs for home extension calling. This is now more than just a "phone system." 
 It’s part of my vision for a **fully integrated smart home**, where even classic devices (like an old red telephone) can interact with the latest AI technologies.
 
 It blends the charm of vintage hardware with modern voice control and automation.
