@@ -2,13 +2,9 @@
 # 2025-07-11 - Building an AI-Powered Home Phone Switchboard
 # 2025-07-11 - Building an AI-Powered Home Phone Switchboard
 
-
-**Project:** AI-driven home phone system + VOIP telephony  
-**Goal:** Create a home phone system that connects to an AI assistant and controls smart devices.
-
 ---
 
-## The Vision
+## Project
 
 This project started with a simple but fun idea:
 
