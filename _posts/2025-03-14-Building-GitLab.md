@@ -1,5 +1,5 @@
-## 🚀14/03/2025 - Building My Own GitLab & GitHub Workflows: A Journey in Source Control
-## 🚀14/03/2025 - Building My Own GitLab & GitHub Workflows: A Journey in Source Control
+## 14/03/2025 - Building My Own GitLab 
+## 14/03/2025 - Building My Own GitLab
 
 ## **Introduction**
 
@@ -52,7 +52,7 @@ I used to just "commit to master" and hope for the best. Today, I learned how to
 - Make and test changes in a `dev-*` branch.
 - When ready, create a **merge request to main** — for internal review and approval (even if it's just me for now!).
 
-> 🌟 **Realizations**:
+>  **Realizations**:
 > - **Main is sacred** — only polished work gets merged.
 > - Dev branches allow **freedom to experiment**.
 > - **Merge requests simulate real team workflows** — future-proof if I collaborate later.
@@ -65,7 +65,7 @@ Another big takeaway:
 - **GitHub** is my public face — for blogs, open-source, and polished work.
 - **GitLab** is my private dev lab — for experiments, scripts, sensitive files (think: Docker Compose files, .bashrc, SSH config).
 
-➡️ So I set up:
+I set up:
 - **Private GitLab repo with branches (main/dev)**
 - **GitHub as public-facing repo for finalized blog posts and docs**
 
@@ -89,13 +89,13 @@ Another big takeaway:
 
 ## **Wins from Today**
 
-- ✅ **Self-hosted GitLab** — up, running, secure, accessible.
-- ✅ **SSH keys and remotes managed**.
-- ✅ **Proper branch strategy** — no more committing everything to master.
-- ✅ **Protected branches and merge requests** in place.
-- ✅ Started **thinking about automation** and **future scaling**.
-- ✅ Realized I now have a **solid backup/versioning system for scripts and dotfiles**.
-- ✅ **New blog workflow** (GitHub as polished, GitLab as dev space).
+- **Self-hosted GitLab** — up, running, secure, accessible.
+- **SSH keys and remotes managed**.
+- **Proper branch strategy** — no more committing everything to master.
+- **Protected branches and merge requests** in place.
+- Started **thinking about automation** and **future scaling**.
+- Realized I now have a **solid backup/versioning system for scripts and dotfiles**.
+- **New blog workflow** (GitHub as polished, GitLab as dev space).
 
 ---
 
@@ -112,11 +112,11 @@ Looking back, I realized:
 
 ## **What's Next?**
 
-- [ ] Add **automation** (cron or Ansible).
-- [ ] Refine **GitHub blog** workflow (maybe mirror a dev branch?).
-- [ ] Continue adding **dotfiles and scripts** — versioning *everything*.
-- [ ] Explore **CI/CD pipelines** for future lab projects.
-- [ ] Keep practicing **merge requests and protected branches**.
+- Add **automation** (cron or Ansible).
+- Refine **GitHub blog** workflow (maybe mirror a dev branch?).
+- Continue adding **dotfiles and scripts** — versioning *everything*.
+- Explore **CI/CD pipelines** for future lab projects.
+- Keep practicing **merge requests and protected branches**.
 
 ---
 
@@ -137,4 +137,4 @@ Set up a GitLab, learn proper branching, and **own your work**.
 
 ---
 
-**Thanks for reading. Let's build cool things.** 🚀
+**Thanks for reading.** 
