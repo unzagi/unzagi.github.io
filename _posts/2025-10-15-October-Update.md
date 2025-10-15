@@ -1,5 +1,5 @@
-# Homelab Automation Roadmap — October 2025 Update
-# Homelab Automation Roadmap — October 2025 Update
+# Homelab Automation Roadmap
+# Homelab Automation Roadmap
 
 Back in **March**, I kicked off this journey with *[Building My Own GitLab]([#](https://www.simon-brooks.co.uk/2025/03/14/Building-GitLab.html))* — setting up version control to bring structure to years of scattered configs, scripts, and lab experiments.  
 
@@ -7,7 +7,7 @@ By **May**, I’d expanded that foundation into a full observability stack, and 
 
 Now, in **October**, the project has a structured roadmap, covering the areas I've been working on these past 7 months, and using gitlab to manage all the work i'm doing via Milestones and Issues.
 
-## 🗺️ Homelab Automation Roadmap (Updated 10 October 2025)
+## Homelab Automation Roadmap
 
 A structured overview of my homelab evolution — from observability to AI and security integration.
 
