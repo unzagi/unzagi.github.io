@@ -1,11 +1,14 @@
 ## About Simon
 ## About Simon
 
-After 7+ years in delivery and architecture roles, I’ve taken deliberate time out to reset, refocus, and rebuild.
+With over **seven years in network architecture and technical delivery** — and more than **15 years in IT overall** — I’ve taken a focused career break in **2025** to deepen my expertise in **observability, automation, systems, security, and DevOps infrastructure design**.
 
-This phase includes:
-- Deep dive into automation, AI, and network design
-- Home lab projects using NetBox, Grafana, and Ansible
-- Technical writing and long-term career reorientation
+This current phase of my work explores:
 
-Open to short-term contracts, architecture builds, or sharp collaborations aligned with this next cycle.
+- **Building fully redundant observability stacks** with Grafana, Prometheus, and InfluxDB.  
+- **Leveraging NetBox, CI/CD, and Ansible** as the backbone for automation and source-of-truth workflows.  
+- **Experimenting with AI-driven monitoring and orchestration** within a self-hosted environment.  
+- **Researching system hardening and identity management**, including OPNsense firewalls, OAuth, and ELK-based log analytics.
+
+I’m open to **network engineering roles**, **observability design projects**, and **collaborations** that align with this next cycle of intelligent, automated infrastructure.
+
