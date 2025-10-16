@@ -1,7 +1,7 @@
 ## About Simon
 ## About Simon
 
-With over **seven years in network architecture and technical delivery** — and more than **15 years in IT overall** — I’ve taken a focused career break in **2025** to deepen my expertise in **observability, automation, systems, security, and DevOps infrastructure design**.
+With over **7 years in network architecture and technical delivery** — and more than **15 years in IT overall** — I’ve taken a focused career break in **2025** to deepen my expertise in **observability, automation, systems, security, and DevOps infrastructure design**.
 
 This current phase of my work explores:
 
