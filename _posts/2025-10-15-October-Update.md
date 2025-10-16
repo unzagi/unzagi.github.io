@@ -38,4 +38,4 @@ A structured overview of my homelab evolution — from observability to AI and s
 | 7 | **Backup** | Rotation, validation, offsite storage | Maintain consistent and recoverable backups |
 | 8 | **NGINX** | SSL, load balancing | Secure and distribute access between services |
 | 9 | **AI** | Local LLMs, MCP framework | Experiment with local AI integration and n8n orchestration |
-| 10 | **Security** | Nessus, ELK Stack, OPNsense, OAuth, Security Hardening | Centralise logging, identity, and threat detection |
+| 10 | **Security** | Nessus, Secrets Management, ELK Stack, OPNsense, Firewall Policy, OAuth, Identity Management, Security Hardening | Centralise logging, identity, and threat detection |
