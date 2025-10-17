@@ -34,8 +34,8 @@ A structured overview of my homelab evolution — from observability to AI and s
 | 3 | **High Availability** | Alertmanager clusters, Grafana mirroring | Build redundancy and fault tolerance |
 | 4 | **Ops Management** | Cron jobs, GitLab CI/CD, scripts | Handle automation, scheduling, and versioned tasks |
 | 5 | **NetBox** | Source-of-truth config, IPAM | Manage network and infrastructure inventory |
-| 6 | **Automation** | n8n, Jenkins, Ansible, CI/CD, auto-documentation | Deploy and maintain configurations reproducibly |
+| 6 | **Automation** | k8s, Helm, Gitlab CI,  n8n, Jenkins, Ansible, CI/CD, auto-documentation | Deploy and maintain configurations reproducibly |
 | 7 | **Backup** | Rotation, validation, offsite storage | Maintain consistent and recoverable backups |
-| 8 | **NGINX** | SSL, load balancing | Secure and distribute access between services |
-| 9 | **AI** | Local LLMs, MCP framework | Experiment with local AI integration and n8n orchestration |
+| 8 | **NGINX** | HA Proxy, Let's Encrypt , SSL, load balancing | Secure and distribute access between services |
+| 9 | **AI** | AI Cloud Cluster, Local LLMs, MCP framework | Experiment with local AI integration and n8n orchestration |
 | 10 | **Security** | Nessus, Secrets Management, ELK Stack, OPNsense, Firewall Policy, OAuth, Identity Management, Security Hardening | Centralise logging, identity, and threat detection |
