@@ -177,6 +177,7 @@ version: 2
 ethernets:
   enp1s0:
     dhcp4: no
+    search: [local.simon-brooks.co.uk]
     addresses:
       - 192.168.99.10/24
     gateway4: 192.168.99.1
@@ -253,6 +254,46 @@ Because I'm building multiple nodes, I'm tracking them in NetBox by:
 -   creating device entries ahead of time
 
 ------------------------------------------------------------------------
+
+## Rebuild Process
+
+When I update any of the cloud-init files, this is the process I'm using.
+
+Delete existing VM and disk:
+
+``` bash
+virsh destroy lab-k8s-cp1 2>/dev/null
+virsh undefine lab-k8s-cp1 --remove-all-storage 2>/dev/null
+rm -f /mnt/data/vms/images/lab-k8s-cp1.qcow2
+```
+Clone from base cloud image:
+``` bash
+qemu-img create -f qcow2 -b /mnt/data/vms/images/ubuntu-24.04-cloud.img -F qcow2 /mnt/data/vms/images/lab-k8s-cp1.qcow2
+```
+
+Recreate cloud-init ISO:
+Make sure user-data, meta-data, and network-config are correct, then:
+
+``` bash
+genisoimage -output /mnt/data/vms/cloud-init/lab-k8s-cp1/seed.iso \
+  -volid cidata -joliet -rock user-data meta-data network-config
+```
+
+Launch the VM:
+
+``` bash
+virt-install \
+  --name lab-k8s-cp1 \
+  --memory 4096 \
+  --vcpus 2 \
+  --disk path=/mnt/data/vms/images/lab-k8s-cp1.qcow2,format=qcow2 \
+  --disk path=/mnt/data/vms/cloud-init/lab-k8s-cp1/seed.iso,device=cdrom \
+  --os-variant ubuntu24.04 \
+  --graphics none \
+  --console pty,target_type=serial \
+  --import \
+  --network bridge=br0
+```
 
 # Summary
 
