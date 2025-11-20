@@ -294,6 +294,10 @@ virt-install \
   --import \
   --network bridge=br0
 ```
+Remove the old SSH Key:
+``` bash
+ssh-keygen -f '/home/simon/.ssh/known_hosts' -R '192.168.99.10'
+```
 
 # Summary
 
