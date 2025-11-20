@@ -221,17 +221,7 @@ networking, and configuration --- fully automated.
 
 ------------------------------------------------------------------------
 
-## Bonus --- Add to NetBox
-
-Because I'm building multiple nodes, I'm tracking them in NetBox by:
-
--   creating the prefix (for example, `192.168.99.0/24`)
--   reserving static IP addresses for Kubernetes nodes
--   creating device entries ahead of time
-
-------------------------------------------------------------------------
-
-# Step 6 --- Version-Control Cloud-Init in GitLab
+## Step 6 --- Version-Control Cloud-Init in GitLab
 
 Once the first node is working, I store the cloud-init configuration
 inside my local GitLab. This gives me an audit trail, makes changes
@@ -240,17 +230,27 @@ trackable, and keeps provisioning reproducible across all nodes.
 I simply create a project in GitLab for my cloud-init definitions and
 copy the files from my VM build directory into it.
 
-![Gitlab](img/gitlab.png)
+![Gitlab](/img/gitlab.png)
 
 ------------------------------------------------------------------------
 
-## Replicating the Repo into GitLab-Mirror
+## Step 7 -- replicating the Repo into GitLab-Mirror
 
 I then mirror the repository into my GitLab-mirror instance so it is
 backed up and accessible across systems. I'm not automating the sync
 yet; I'm manually updating it as needed.
 
-![Gitlab-Mirror](img/gitlab-mirror.png)
+![Gitlab-Mirror](/img/gitlab-mirror.png)
+
+------------------------------------------------------------------------
+
+## Bonus --- Add to NetBox
+
+Because I'm building multiple nodes, I'm tracking them in NetBox by:
+
+-   creating the prefix (for example, `192.168.99.0/24`)
+-   reserving static IP addresses for Kubernetes nodes
+-   creating device entries ahead of time
 
 ------------------------------------------------------------------------
 
