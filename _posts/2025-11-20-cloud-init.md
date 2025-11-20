@@ -255,9 +255,9 @@ Because I'm building multiple nodes, I'm tracking them in NetBox by:
 
 ------------------------------------------------------------------------
 
-## Rebuild Process
+## Build and Rebuild Process
 
-When I update any of the cloud-init files, this is the process I'm using.
+When I build or update any of the cloud-init files to rebuild, this is the process I'm using.
 
 Delete existing VM and disk:
 
@@ -266,19 +266,22 @@ virsh destroy lab-k8s-cp1 2>/dev/null
 virsh undefine lab-k8s-cp1 --remove-all-storage 2>/dev/null
 rm -f /mnt/data/vms/images/lab-k8s-cp1.qcow2
 ```
-Clone from base cloud image:
+Clone from base cloud image and adjust disk size to 40G:
 ``` bash
-qemu-img create -f qcow2 -b /mnt/data/vms/images/ubuntu-24.04-cloud.img -F qcow2 /mnt/data/vms/images/lab-k8s-cp1.qcow2
+cp /mnt/data/vms/images/ubuntu-24.04-cloud.img /mnt/data/vms/images/lab-k8s-cp1.qcow2
+qemu-img resize /mnt/data/vms/images/lab-k8s-cp1.qcow2 40G
 ```
 
 Recreate cloud-init ISO:
-Make sure user-data, meta-data, and network-config are correct, then:
 
 ``` bash
 genisoimage -output /mnt/data/vms/cloud-init/lab-k8s-cp1/seed.iso \
   -volid cidata -joliet -rock user-data meta-data network-config
 ```
-
+Remove the old SSH Key:
+``` bash
+ssh-keygen -f '/home/simon/.ssh/known_hosts' -R '192.168.99.10'
+```
 Launch the VM:
 
 ``` bash
@@ -294,11 +297,6 @@ virt-install \
   --import \
   --network bridge=br0
 ```
-Remove the old SSH Key:
-``` bash
-ssh-keygen -f '/home/simon/.ssh/known_hosts' -R '192.168.99.10'
-```
-
 # Summary
 
 By combining cloud-init, KVM, static networking, and GitLab for
