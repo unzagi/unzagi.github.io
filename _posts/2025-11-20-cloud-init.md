@@ -245,7 +245,18 @@ yet; I'm manually updating it as needed.
 
 ------------------------------------------------------------------------
 
-## Bonus --- Add to NetBox
+# Summary
+
+By combining cloud-init, KVM, static networking, and GitLab for
+version-control, I now have a reproducible, declarative VM build process
+--- perfect for spinning up Kubernetes nodes as I learn and experiment.
+This gives me a clean foundation for building the cluster, tracking
+configuration drift, and extending my lab with additional tooling over
+time.
+
+------------------------------------------------------------------------
+
+## Appendix --- Add to NetBox
 
 Because I'm building multiple nodes, I'm tracking them in NetBox by:
 
@@ -255,7 +266,7 @@ Because I'm building multiple nodes, I'm tracking them in NetBox by:
 
 ------------------------------------------------------------------------
 
-## Build and Rebuild Process
+## Appendix --- Build and Rebuild Process
 
 When I build or update any of the cloud-init files to rebuild, this is the process I'm using.
 
@@ -297,11 +308,48 @@ virt-install \
   --import \
   --network bridge=br0
 ```
-# Summary
+## Appendix --- Powering off VMs
 
-By combining cloud-init, KVM, static networking, and GitLab for
-version-control, I now have a reproducible, declarative VM build process
---- perfect for spinning up Kubernetes nodes as I learn and experiment.
-This gives me a clean foundation for building the cluster, tracking
-configuration drift, and extending my lab with additional tooling over
-time.
+A quick process to power off all VMs.
+
+## 1. List all running VMs
+
+``` bash
+virsh list
+ Id   Name          State
+-----------------------------
+ 1    ubuntu24.04   running
+ 11   lab-k8s-cp2   running
+ 12   lab-k8s-cp3   running
+ 13   lab-k8s-w1    running
+ 14   lab-k8s-w2    running
+ 15   lab-k8s-cp1   running
+
+```
+
+## 2. Shutdown all running VMs (graceful)
+
+``` bash
+for vm in $(virsh list --name); do
+  virsh shutdown "$vm"
+done
+
+Domain 'ubuntu24.04' is being shutdown
+
+Domain 'lab-k8s-cp2' is being shutdown
+
+Domain 'lab-k8s-cp3' is being shutdown
+
+Domain 'lab-k8s-w1' is being shutdown
+
+Domain 'lab-k8s-w2' is being shutdown
+
+Domain 'lab-k8s-cp1' is being shutdown
+
+
+```
+## 3. Confirm All VMs Are Off
+
+``` bash
+virsh list
+```
