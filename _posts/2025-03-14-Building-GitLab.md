@@ -1,6 +1,6 @@
 ---
 title: "Building My Own GitLab"
-date: 2026-01-18
+date: 2025-03-14
 status: publish
 ---
 ## Building My Own GitLab
