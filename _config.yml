@@ -32,9 +32,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+titles_from_headings: false
 
 defaults:
   - scope:
