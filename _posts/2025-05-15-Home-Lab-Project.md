@@ -1,6 +1,8 @@
-## AI, Networking, Automation — My Ongoing Lab Project
-## AI, Networking, Automation — My Ongoing Lab Project
-
+---
+title: "AI, Networking, Automation — My Ongoing Lab Project"
+date: 2025-05-15
+status: publish
+---
 Back in February, I spec’d a new PC to dive into AI/LLMs and sharpen my existing networking skills. By May, I’d spun up a full observability stack, built version control, hosted internal DNS, deployed Docker and LXC services, and explored a suite of self-hosted tools — with ChatGPT as my hands-on assistant and research partner throughout.
 
 What began as a modest AI lab has evolved into a production-grade home infrastructure — reconnecting me with my sysadmin roots while pushing into automation, AI integration, and modern networking.
