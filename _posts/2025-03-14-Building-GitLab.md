@@ -3,8 +3,6 @@ title: "Building My Own GitLab"
 date: 2025-03-14
 status: publish
 ---
-## Building My Own GitLab
-
 ## **Introduction**
 
 Today was one of those days where **everything clicks into place**.  
