@@ -3,8 +3,6 @@ title: "Building an AI-Powered Home Phone ☎️ Switchboard"
 date: 2025-06-10
 status: publish
 ---
----
-
 ## Introduction
 
 This project started with a simple but fun idea:
