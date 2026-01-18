@@ -1,5 +1,8 @@
-# Homelab Automation Roadmap
-# Homelab Automation Roadmap
+---
+title: "Homelab Automation Roadmap"
+date: 2025-10-15
+status: publish
+---
 
 Back in **March**, I kicked off this journey with *[Building My Own GitLab]([#](https://www.simon-brooks.co.uk/2025/03/14/Building-GitLab.html))* — setting up version control to bring structure to years of scattered configs, scripts, and lab experiments.  
 
