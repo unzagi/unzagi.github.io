@@ -1,6 +1,8 @@
-# Using Cloud-Init to Build KVM Infrastructure & Static Networking
-# Using Cloud-Init to Build KVM Infrastructure & Static Networking
-
+---
+title: "Using Cloud-Init to Build KVM Infrastructure & Static Networking"
+date: 2025-10-15
+status: publish
+---
 ## Introduction
 
 Typically, I've built VMs either through Proxmox using its automation scripts, Vagrant for small disposable environments, or by spinning up an installation ISO and stepping through the Ubuntu installer manually. That’s been fine for general-purpose workloads, but now I’m building a small Kubernetes cluster on my RIG for testing — and I want something far more structured, repeatable, and aligned to the way I’m evolving my homelab.
