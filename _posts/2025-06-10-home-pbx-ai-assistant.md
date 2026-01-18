@@ -1,6 +1,8 @@
-## Building an AI-Powered Home Phone ☎️ Switchboard
-## Building an AI-Powered Home Phone ☎️ Switchboard
-
+---
+title: "Building an AI-Powered Home Phone ☎️ Switchboard"
+date: 2025-06-10
+status: publish
+---
 ---
 
 ## Introduction
