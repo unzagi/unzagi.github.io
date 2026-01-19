@@ -1,5 +1,5 @@
 ---
-title: "Using Cloud-Init to Build KVM Infrastructure & Static Networking"
+title: "How to Automate KVM Infrastructure with Cloud-Init"
 date: 2025-11-20
 status: publish
 ---
