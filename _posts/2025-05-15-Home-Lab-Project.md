@@ -1,5 +1,5 @@
 ---
-title: "AI, Networking, Automation — My Ongoing Lab Project"
+title: "How to Build the Best AI and Automation Homelab"
 date: 2025-05-15
 status: publish
 ---
