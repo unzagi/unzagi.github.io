@@ -4,9 +4,9 @@ date: 2025-10-15
 status: publish
 ---
 
-Back in **March**, I kicked off this journey with *[Building My Own GitLab]([#](https://www.simon-brooks.co.uk/2025/03/14/Building-GitLab.html))* — setting up version control to bring structure to years of scattered configs, scripts, and lab experiments.  
+Back in **March**, I kicked off this journey with *[Building My Own GitLab](https://blog.simon-brooks.co.uk/tech/2025-03-14-building-gitlab/)* — setting up version control to bring structure to years of scattered configs, scripts, and lab experiments.  
 
-By **May**, I’d expanded that foundation into a full observability stack, and multi-node Docker environment — detailed in *[AI, Networking, Automation — My Ongoing Lab Project](https://www.simon-brooks.co.uk/2025/05/15/Home-Lab-Project.html)*.
+By **May**, I’d expanded that foundation into a full observability stack, and multi-node Docker environment — detailed in *[AI, Networking, Automation — My Ongoing Lab Project](https://blog.simon-brooks.co.uk/tech/2025-05-15-home-lab-project/)*.
 
 Now, in **October**, the project has a structured roadmap, covering the areas I've been working on these past 7 months, and using gitlab to manage all the work i'm doing via Milestones and Issues.
 
