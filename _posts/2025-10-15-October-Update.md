@@ -1,5 +1,5 @@
 ---
-title: "Homelab Automation Roadmap"
+title: "The Ultimate Homelab Automation Roadmap"
 date: 2025-10-15
 status: publish
 ---
