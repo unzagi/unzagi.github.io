@@ -3,7 +3,7 @@ title: "How to Automate KVM Infrastructure with Cloud-Init"
 date: 2025-11-20
 status: publish
 ---
-## Introduction
+## Why I chose Cloud-Init for KVM Automation
 
 Typically, I've built VMs either through Proxmox using its automation scripts, Vagrant for small disposable environments, or by spinning up an installation ISO and stepping through the Ubuntu installer manually. That’s been fine for general-purpose workloads, but now I’m building a small Kubernetes cluster on my RIG for testing — and I want something far more structured, repeatable, and aligned to the way I’m evolving my homelab.
 
