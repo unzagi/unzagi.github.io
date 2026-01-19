@@ -1,7 +1,8 @@
 ---
-title: "Building My Own GitLab"
-date: 2025-03-14
+title: "How to Set Up a Private GitLab Server for Your Homelab"
+date: 2025-05-03
 status: publish
+description: "Learn how to build a private GitLab server using Docker to manage your homelab scripts, dotfiles, and automation workflows securely."
 ---
 ## **Introduction**
 
