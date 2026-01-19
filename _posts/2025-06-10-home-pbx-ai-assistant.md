@@ -1,7 +1,8 @@
 ---
-title: "Building an AI-Powered Home Phone ☎️ Switchboard"
+title: "How to Build a Custom AI-Powered Home Phone Switchboard"
 date: 2025-06-10
 status: publish
+description: "Learn how to connect a classic analogue red phone to Home Assistant and a PBX to create a fully functional, AI-powered home phone switchboard."
 ---
 ## Introduction
 
@@ -17,14 +18,14 @@ Here’s the dream:
 - Allow family and friends to call in from the outside world
 - Allow myself to make calls out from my home phones to any normal phone
 
-## How It Works
+## How the AI-Powered Home Phone System Works
 
 ### Starting Point: Home Assistant VOIP
 
 I began by following the [Home Assistant VOIP integration guide](https://www.home-assistant.io/integrations/voip/) and using a Grandstream Analogue-to-VoIP adapter.  
 This allowed the red phone to directly call Home Assistant — triggering automations and interacting with the assistant without needing a full PBX.
 
-![Red Phone Setup](/img/red_phone.jpg)
+![Testing the AI-Powered Home Phone switchboard](/img/red_phone.jpg)
 
 
 ### Expanding with a PBX
@@ -92,7 +93,7 @@ Now:
 - The PBX now saves copies of its configuration and data regularly to an external backup server.
 - This ensures that if anything goes wrong, I can easily restore the system.
 
-## Result
+## The Final AI-Powered Home Phone Experience
 
 - I can call my **AI assistant** (via Home Assistant’s VOIP integration) from any home phone (physical or softphone).  
   When I pick up a phone and dial the AI extension, it speaks back using **Text-to-Speech**, and I can control smart devices by voice through the phone line.  
